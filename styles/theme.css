@@ -338,3 +338,9 @@ html[data-brand="iyw"] .intro::after {background:linear-gradient(180deg,#091b209
 /* Claude 10-28: new SVG lockup is already white; size by width, no filter. */
 html[data-brand="iyw"] .header-logo,html[data-brand="iyw"] .footer-logo img {filter:none;width:200px;height:auto;max-height:none;object-fit:contain;padding:0;background:none;}
 @media (max-width:479px){html[data-brand="iyw"] .header-logo {width:150px;}}
+/* Claude 10-28 (iOS pass): programme text is long; an open panel flows below the photo and grows the card, never scrolls inside it. */
+html[data-brand="iyw"] [data-guide] .coaches-person-info {position:relative;inset:auto;max-height:none;overflow:visible;}
+html[data-brand="iyw"] [data-guide]:not(.is-open) .coaches-person-info {display:none;}
+html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {display:block;animation:iyw-panel-in .2s ease-out both;}
+@keyframes iyw-panel-in {from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {animation:none;}}
