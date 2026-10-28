@@ -344,3 +344,6 @@ html[data-brand="iyw"] [data-guide]:not(.is-open) .coaches-person-info {display:
 html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {display:block;animation:iyw-panel-in .2s ease-out both;}
 @keyframes iyw-panel-in {from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {animation:none;}}
+/* Claude 10-28 (iOS pass): carousel dots were Vita's orange SVGs from Vita's Webflow CDN; plain squares in our tokens. */
+html[data-brand="iyw"] .slick-dots li button {background:rgba(255,255,255,.22);background-image:none;background-size:auto;}
+html[data-brand="iyw"] .slick-dots li.slick-active button {background:#970015;background-image:none;}
