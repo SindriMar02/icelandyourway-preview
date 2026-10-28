@@ -347,3 +347,6 @@ html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {display:block;
 /* Claude 10-28 (iOS pass): carousel dots were Vita's orange SVGs from Vita's Webflow CDN; plain squares in our tokens. */
 html[data-brand="iyw"] .slick-dots li button {background:rgba(255,255,255,.22);background-image:none;background-size:auto;}
 html[data-brand="iyw"] .slick-dots li.slick-active button {background:#970015;background-image:none;}
+/* Claude 10-28 lag purge: the scrolled header re-blurred the moving page every frame (backdrop-filter 12px under ScrollSmoother). Same look, no blur. */
+html[data-brand="iyw"] .header.is-active {-webkit-backdrop-filter:none;backdrop-filter:none;background-color:rgba(11,26,31,.94);}
+html[data-brand="iyw"] .mobile-menu, html[data-brand="iyw"] .header .mobile-menu {-webkit-backdrop-filter:none;backdrop-filter:none;}
