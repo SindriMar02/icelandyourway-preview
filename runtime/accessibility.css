@@ -1,0 +1,21 @@
+/* Pointer appearance remains unchanged; keyboard and reduced-motion alternatives. */
+html[data-input="key"] :focus-visible {
+  outline: 2px solid #fb9826;
+  outline-offset: 4px;
+}
+html[data-input="key"] .coaches-person:focus-within .coaches-person-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

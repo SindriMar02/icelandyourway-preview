@@ -1,0 +1,3 @@
+/* Native scroll restoration owns the offset while fonts load. Browser scroll
+   anchoring must not add a second compensation before ScrollSmoother starts. */
+html { overflow-anchor: none; }

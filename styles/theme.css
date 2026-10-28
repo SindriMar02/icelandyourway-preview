@@ -1,0 +1,340 @@
+/* Brand overrides. Source values remain in webflow.css and experience.css. */
+:root {
+  --brand-green: #0d2e37;
+  --brand-accent: #970015;
+  --button-clicked: #970015;
+}
+
+/* Inherited slice only: other Vita routes retain their source theme. */
+/* Vita dark surfaces and white-alpha hierarchy; sampled logo crimson accent. */
+html[data-brand="iyw"] {
+  --brand-green: #0d2e37;
+  --brand-accent: #970015;
+  --button-clicked: #970015;
+}
+html[data-brand="iyw"] .body { background:#091b20; font-family:Inter,sans-serif; }
+html[data-brand="iyw"] .header.is-active,
+html[data-brand="iyw"] .mobile-menu { background:#091b20; }
+/* No raw browser link colour anywhere on the brand pages. */
+html[data-brand="iyw"] a { color:inherit; text-decoration:none; }
+html[data-brand="iyw"] .header-logo { width:3.5rem;height:3.5rem;object-fit:contain; }
+html[data-brand="iyw"] .header__l { padding-top:0;padding-bottom:0; }
+html[data-brand="iyw"] .footer-logo img { width:3.5rem;height:3.5rem;object-fit:contain; }
+html[data-brand="iyw"] .intro { background-image:var(--hero-photo); }
+html[data-brand="iyw"] .intro__headline { font-size:min(11.875rem,14vw);letter-spacing:-.052em; }
+html[data-brand="iyw"] .intro__text { color:#fff; text-shadow:none; }
+html[data-brand="iyw"] .body-xxl { letter-spacing:-.01em; }
+html[data-brand="iyw"] .featured-item__illustration { width:100%;height:100%;object-fit:cover; }
+html[data-brand="iyw"] .featured-item__visual { overflow:hidden; }
+html[data-brand="iyw"] .featured-item__head .h4 { overflow-wrap:break-word; }
+html[data-brand="iyw"] .footer__visual { opacity:.22; }
+html[data-brand="iyw"] .footer-top__links { gap:1rem; }
+html[data-brand="iyw"] .footer-top__contact { margin-bottom:.65rem; }
+html[data-brand="iyw"] .itinerary-day { padding:2rem 0;border-bottom:1px solid #ffffff33; }
+html[data-brand="iyw"] .itinerary-day p,
+html[data-brand="iyw"] .retreat-page-content-item p { margin:1rem 0;line-height:1.6; }
+html[data-brand="iyw"] .walk-chips { display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem; }
+html[data-brand="iyw"] .walk-chips span { border:1px solid #ffffff66;padding:.5rem .75rem; }
+html[data-brand="iyw"] .inclusion { border-bottom:1px solid #ffffff66; }
+html[data-brand="iyw"] .inclusion-toggle { width:100%;display:flex;justify-content:space-between;text-align:left;padding:1.25rem 0;background:transparent;color:white;cursor:pointer; }
+html[data-brand="iyw"] .inclusion-panel { height:0;overflow:hidden; }
+html[data-brand="iyw"] .inclusion-panel ul { margin:0;padding:0 1.5rem 1.5rem;line-height:1.6; }
+html[data-brand="iyw"] .trip-guide { width:12rem;max-width:100%; }
+html[data-brand="iyw"] .btn-secondary { color:white; }
+html[data-brand="iyw"] :where(a,button):focus-visible { outline:2px solid white;outline-offset:4px; }
+html[data-brand="iyw"] .btn-primary:active { background:#970015;color:white; }
+html[data-brand="iyw"] .retreat-page-intro__photos { flex-wrap:wrap; }
+html[data-brand="iyw"] .retreat-page-intro__photo { object-fit:cover; }
+html[data-brand="iyw"] .practitioners-person__visual { display:block;color:white; }
+html[data-brand="iyw"] .practitioners-person__photo { object-fit:cover; }
+@media (hover:hover) and (pointer:fine) {
+ html[data-brand="iyw"] .btn-primary:hover {background:white;color:#0d2e37;}
+ html[data-brand="iyw"] .inclusion-toggle:hover {color:white;text-decoration:underline;}
+}
+@media(max-width:479px) {
+ html[data-brand="iyw"] .intro__headline {font-size:16vw;letter-spacing:-.05em;}
+ html[data-brand="iyw"] .header-logo {width:3rem;height:3rem;}
+ html[data-brand="iyw"] .itinerary-day {padding:1.5rem 0;}
+ html[data-brand="iyw"] .retreat-page-intro__photos {display:block;}
+}
+html[data-brand="iyw"] .destination {background-image:none;}
+@media(max-width:479px){
+}
+@media(min-width:480px){
+ html[data-brand="iyw"] .retreat-page-intro__photos > .retreat-page-intro__photo:nth-child(n+5) {display:none;}
+}
+html[data-brand="iyw"] .guide-toggle {border:0;padding:0;background:transparent;text-align:left;color:white;width:100%;cursor:pointer;}
+html[data-brand="iyw"] [data-guide] .coaches-person-info {opacity:0;pointer-events:none;transition:opacity .2s linear;overflow:auto;}
+html[data-brand="iyw"] [data-guide].is-open .coaches-person-info {opacity:1;pointer-events:auto;}
+html[data-brand="iyw"] [data-guide] .coaches-person-info__head {height:auto!important;}
+html[data-brand="iyw"] .guide-close {color:white;background:transparent;padding:.75rem;float:right;cursor:pointer;}
+html[data-brand="iyw"] .featured-item {border-top:1px solid #ffffff33;}
+html[data-brand="iyw"] .featured-item:nth-child(even) {border-left:1px solid #ffffff33;}
+@media(max-width:479px){html[data-brand="iyw"] .featured-item:nth-child(even){border-left:0;}}
+@media(min-width:480px){
+ html[data-brand="iyw"] .retreat-page-intro__photo {width:100%;min-height:0;}
+}
+/* Slice 3: retain Vita surfaces while accommodating real content. */
+html[data-brand="iyw"] .contact-facts {display:block;padding:3rem;line-height:1.6;}
+html[data-brand="iyw"] .contact-facts p {margin:1rem 0;}
+html[data-brand="iyw"] .coaches-person__photo {object-fit:cover;}
+html[data-brand="iyw"] .coaches-person-info p {margin-bottom:1rem;line-height:1.5;}
+html[data-brand="iyw"] .legal-content__item p {margin:1rem 0;line-height:1.6;}
+html[data-brand="iyw"] .map-pin:focus {outline:none;}
+html[data-brand="iyw"] .map-pin:focus-visible .map-hit {stroke:white;stroke-width:2;}
+html[data-brand="iyw"] .guide-toggle {display:block;}
+@media(max-width:479px){
+ html[data-brand="iyw"] .contact-facts {padding:1.5rem 0;}
+ html[data-brand="iyw"] .coaches-person-info {max-height:100%;}
+}
+@media(prefers-reduced-motion:reduce){html[data-brand="iyw"] [data-guide] .coaches-person-info {transition:none;}}
+html[data-brand="iyw"] .coaches-person[data-guide]:not(.is-open) .coaches-person-info {opacity:0;pointer-events:none;}
+html[data-brand="iyw"] .coaches-person:nth-child(3n+2) {border-left:1px solid var(--white-10);border-right:1px solid var(--white-10);}
+@media(max-width:479px){html[data-brand="iyw"] .coaches-person:nth-child(3n+2){border-left:0;border-right:0;}}
+html[data-brand="iyw"] [hidden] {display:none!important;}
+/* Long harvested galleries (Japan 42, Comovatn 19 photos) put one Slick dot per slide; keep the dot row inside the phone width. */
+@media (max-width:479px){html[data-brand="iyw"] .slick-dots {flex-wrap:wrap;max-width:100%;box-sizing:border-box;padding:0 1.25rem;row-gap:.25rem;}
+html[data-brand="iyw"] .slick-dots li button {width:1rem;height:1rem;}}
+/* Long legal link labels (Persónuverndarstefna, Almennir skilmálar) are longer than Vita's; let the footer bottom row wrap on phones. */
+@media (max-width:479px){html[data-brand="iyw"] .footer-bottom__links {flex-wrap:wrap;box-sizing:border-box;row-gap:.5rem;}}
+/* Active navigation remains white with an underline. */
+html[data-brand="iyw"] .button-sm.color-white.header-nav__link.w--current {color:#fff;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em;}
+/* The removed "Allar ferðir" block used to hold the right gutter; give the nav Vita's 2.5rem side padding back. */
+@media (min-width:480px){html[data-brand="iyw"] .header__r {padding-right:2.5rem;}}
+
+/* Visual repair 1: Vita component dimensions; no palette or motion overrides. */
+html[data-brand="iyw"] .featured-item {border-color:var(--white-10);}
+html[data-brand="iyw"] .featured-item:nth-child(even) {border-left-color:var(--white-10);}
+html[data-brand="iyw"] .practitioners-person__visual {aspect-ratio:1;overflow:hidden;}
+html[data-brand="iyw"] .practitioners-person__photo {display:block;width:100%;height:100%;object-fit:cover;}
+html[data-brand="iyw"] .destination {position:relative;overflow:hidden;}
+html[data-brand="iyw"] .destination > .container {position:relative;z-index:1;pointer-events:none;}
+html[data-brand="iyw"] .destination__code {position:absolute;inset:12rem 0 0;display:block;}
+html[data-brand="iyw"] .destination__dots {position:static;display:block;width:100%;height:100%;}
+html[data-brand="iyw"] .footer-top__links {gap:0;}
+html[data-brand="iyw"] .footer-top__contact {margin-bottom:0;}
+html[data-brand="iyw"] .footer-logo {display:inline-flex;width:auto;}
+html[data-brand="iyw"] .retreat-page-content-item > p {line-height:1.3;}
+html[data-brand="iyw"] .legal-content__item p {line-height:1.3;margin:.75rem 0;}
+html[data-brand="iyw"] .contact-us__illustration {width:100%;height:100%;object-fit:cover;}
+html[data-brand="iyw"] .main-wrapper:has(.contact-us) .footer__visual {display:none;}
+@media(min-width:480px){
+ html[data-brand="iyw"] .retreat-page-intro__photos {height:calc((100vw - 5rem) * .4);min-height:0;grid-template-rows:minmax(0,1fr) minmax(0,1fr);}
+ html[data-brand="iyw"] .retreat-page-intro__photo {height:100%;max-height:100%;min-width:0;min-height:0;}
+}
+@media(max-width:479px){
+ html[data-brand="iyw"] .footer-logo img {width:3rem;height:3rem;}
+ html[data-brand="iyw"] .destination {aspect-ratio:auto;min-height:40rem;}
+ html[data-brand="iyw"] .destination__code {inset:13rem 0 1rem;}
+ html[data-brand="iyw"] .destination__dots {height:auto;min-height:23rem;}
+}
+
+html[data-brand="iyw"] .about__visual {aspect-ratio:660/540;}
+html[data-brand="iyw"] .about__illustration {display:block;width:100%;height:100%;object-fit:cover;}
+
+@media(max-width:479px){html[data-brand="iyw"] .about__visual {aspect-ratio:335/366;}}
+/* Catalogue has six rows; its rules follow actual cards, rather than home thirds. */
+@media(min-width:480px){
+ html[data-brand="iyw"] .featured__items:not(:has(.featured__dec)) > .featured-item {border-top:1px solid var(--white-10)!important;}
+ html[data-brand="iyw"] .featured__items:not(:has(.featured__dec)) > .featured-item:nth-child(even) {border-left:1px solid var(--white-10)!important;}
+}
+/* Land read too dim (phone especially): lift the fill one step and give coastlines a faint white line, still darker than Vita's text tones. */
+html[data-brand="iyw"] .map-land {fill:#143a43;stroke:#ffffff2e;stroke-width:.6;vector-effect:non-scaling-stroke;}
+@media(max-width:479px){html[data-brand="iyw"] .map-land {fill:#184651;stroke:#ffffff40;}}
+html[data-brand="iyw"] .tw-word {white-space:nowrap;}
+/* Hero: legibility from a soft scrim behind the text, never a text-shadow (it bled into the button label). */
+html[data-brand="iyw"] .intro {position:relative;}
+html[data-brand="iyw"] .intro::after {content:"";position:absolute;inset:0;background:#091b2033;pointer-events:none;z-index:0;}
+html[data-brand="iyw"] .intro > .intro__in {position:relative;z-index:1;}
+html[data-brand="iyw"] .intro > .intro__button {z-index:2;}
+/* Primary button in Inherited red: solid pill, white label, no Vita star glyph. */
+html[data-brand="iyw"] .btn-primary {background:#970015;box-shadow:none;}
+html[data-brand="iyw"] .btn-primary .button-sm {color:#fff;text-shadow:none;font-weight:500;}
+html[data-brand="iyw"] .btn-primary .btn-icon {display:none;}
+
+
+/* Map pins: a label names the trip on hover, keyboard focus or first tap. */
+html[data-brand="iyw"] .destination__code {position:relative;}
+html[data-brand="iyw"] .map-pin circle {transition:r .2s cubic-bezier(.23,1,.32,1);}
+html[data-brand="iyw"] .map-pin:hover g circle, html[data-brand="iyw"] .map-pin:focus-visible g circle {r:16;}
+html[data-brand="iyw"] .map-tip {position:absolute;z-index:3;transform:translate(-50%,calc(-100% - 10px));display:flex;flex-direction:column;gap:2px;width:max-content;max-width:min(280px,80vw);padding:.75rem 1rem;background:#f5f1ea;color:#0d2e37;border-radius:6px;box-shadow:0 8px 24px #0006;pointer-events:none;animation:map-tip-in .18s cubic-bezier(.23,1,.32,1);}
+html[data-brand="iyw"] .map-tip.is-below {transform:translate(-50%,10px);}
+html[data-brand="iyw"] .map-tip[hidden] {display:none;}
+html[data-brand="iyw"] .map-tip__title {font-weight:600;font-size:15px;line-height:1.3;}
+html[data-brand="iyw"] .map-tip__meta {font-size:13px;opacity:.75;}
+html[data-brand="iyw"] .map-tip__price {font-size:13px;font-weight:600;color:var(--brand-accent);}
+@keyframes map-tip-in {from {opacity:0;}}
+@media (prefers-reduced-motion:reduce) {html[data-brand="iyw"] .map-tip {animation:none;} html[data-brand="iyw"] .map-pin circle {transition:none;}}
+/* Iceland Your Way: composition within Vita's grids and spacing. */
+html {overflow-x:clip;scroll-behavior:auto;}
+html[data-brand="iyw"] {--brand-accent:#970015;--button-clicked:#970015;}
+html[data-brand="iyw"] :where(p,li,dd,dt,label,.body-md,.body-sm,.body-lg) {font-size:max(17px,1rem);line-height:1.5;}
+html[data-brand="iyw"] :where(button,input,select,textarea) {font:inherit;appearance:none;}
+html[data-brand="iyw"] :where(button,select) {cursor:pointer;}
+html[data-brand="iyw"] :where(h1,h2,h3,h4,p) {overflow-wrap:break-word;}
+html[data-brand="iyw"] .header__l {padding:10px 2.5rem;}
+html[data-brand="iyw"] .header-logo,html[data-brand="iyw"] .footer-logo img {width:12rem;height:auto;background:none;padding:0;box-sizing:border-box;filter:brightness(0) invert(1);}
+html[data-brand="iyw"] .header__in {min-height:72px;}
+html[data-brand="iyw"] .intro {background-position:center;min-height:800px;}
+html[data-brand="iyw"] .intro__headline {max-width:12ch;font-size:min(11.875rem,12.5vw);line-height:1;letter-spacing:-.052em;margin:0 auto 2rem;}
+html[data-brand="iyw"] .intro__text {position:relative;z-index:1;}
+html[data-brand="iyw"] .intro .body-xxl {max-width:40ch;margin:0 auto 2rem;}
+.iyw-hero-actions {display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+html[data-brand="iyw"] .btn-primary {background:#970015;color:#fff;}
+html[data-brand="iyw"] .btn-secondary {color:white;}
+html[data-brand="iyw"] .iyw-two-ways {grid-template-columns:repeat(2,minmax(0,1fr));}
+html[data-brand="iyw"] .iyw-two-ways .statistic-item {padding:2.5rem;display:block;}
+html[data-brand="iyw"] .iyw-two-ways .statistic-item__visual {height:22rem;margin:2rem 0;}
+html[data-brand="iyw"] .statistic-item__illustration {width:100%;height:100%;object-fit:cover;}
+.iyw-categories {display:grid;gap:24px;}
+.iyw-categories a {border-top:1px solid var(--white-10);padding-top:20px;}
+.iyw-categories p {margin:8px 0 0;}
+.iyw-page-heading {padding-top:10rem;padding-bottom:3rem;}
+.iyw-filters {display:flex;align-items:end;flex-wrap:wrap;gap:24px;margin-top:32px;}
+.iyw-filters label,.map-select {display:grid;gap:8px;}
+.iyw-filters select,.map-select select {color:white;background:#0d2e37;border:1px solid var(--white-40);padding:12px;max-width:100%;min-height:48px;}
+.iyw-filters select option,.map-select select option {background:#091b20;color:white;}
+html[data-brand="iyw"] .iyw-map {aspect-ratio:auto;min-height:0;padding:5rem 0;}
+html[data-brand="iyw"] .iyw-map > .container {pointer-events:auto;}
+html[data-brand="iyw"] .iyw-map .destination__code {position:relative;inset:auto;}
+html[data-brand="iyw"] .iyw-map .destination__dots {display:block;width:100%;height:auto;min-height:0;}
+.map-select {max-width:42rem;margin:2rem 0;}
+.map-stop-list ul {display:flex;gap:6px 16px;flex-wrap:wrap;list-style:none;padding:0;margin:24px 0;}
+.map-stop-list li a {text-underline-offset:.2em;}
+.map-attribution {margin-top:24px;}
+.iyw-beyond {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin:3rem 0;}
+.iyw-beyond article {border-top:1px solid var(--white-20);padding-top:24px;}
+.iyw-beyond p {margin:16px 0;}
+.iyw-numbers,.iyw-enquiry {padding-top:5rem;padding-bottom:5rem;}
+.iyw-number-photo {height:24rem;overflow:hidden;margin-bottom:3rem;}
+.iyw-number-photo img {width:100%;height:100%;object-fit:cover;}
+.iyw-number-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;}
+.iyw-enquiry {border-top:1px solid var(--white-20);}
+.iyw-enquiry p {margin:2rem 0;}
+.trip-phone {display:block;padding:20px 0;text-decoration:underline!important;}
+html[data-brand="iyw"] .how-works-item {height:auto;min-height:0;justify-content:flex-start;gap:1.25rem;}
+html[data-brand="iyw"] .how-works-item__head {min-height:0;height:auto;}
+html[data-brand="iyw"] .how-works-item__count {font-size:3rem;color:#fff;line-height:1;}
+html[data-brand="iyw"] .how-works-item__body {margin-top:0;}
+html[data-brand="iyw"] .how-works-item__body p {margin-top:16px;color:white;}
+html[data-brand="iyw"] .retreat-page-content__in {align-items:start;}
+html[data-brand="iyw"] .retreat-page-content__description {min-width:0;}
+html[data-brand="iyw"] .retreat-page-info {height:auto;}
+html[data-brand="iyw"] .retreat-page-info dl {margin:24px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+html[data-brand="iyw"] .retreat-page-info dd {margin:0;}
+html[data-brand="iyw"] .retreat-page-info .btn-primary {width:100%;}
+html[data-brand="iyw"] .retreat-page-content-item p {font-size:max(17px,1rem);line-height:1.5;}
+.iyw-tabs {display:flex;flex-wrap:wrap;gap:8px;margin:24px 0;}
+.iyw-tabs button {flex:1 1 45%;text-align:left;background:transparent;color:white;border:1px solid var(--white-40);padding:16px;}
+.iyw-tabs button[aria-selected="true"] {background:white;color:#091b20;}
+.inclusion-panel p {padding-bottom:16px;}
+html[data-brand="iyw"] .coaches {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
+html[data-brand="iyw"] .coaches-person {width:auto;min-width:0;position:relative;}
+html[data-brand="iyw"] .coaches-person__visual {aspect-ratio:auto;}
+html[data-brand="iyw"] .coaches-person__photo {width:100%;height:auto;aspect-ratio:1;object-fit:cover;}
+html[data-brand="iyw"] .coaches-person__head {position:static;padding:24px 0;}
+html[data-brand="iyw"] .coaches-person__visual::after {display:none;}
+html[data-brand="iyw"] .coaches-person-info {position:absolute;inset:0;padding:24px;background:#0d2e37;overflow:auto;max-height:100%;}
+html[data-brand="iyw"] .coaches-person-info p {font-size:17px;line-height:1.5;}
+.iyw-about {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;}
+.iyw-about p {margin:24px 0;}
+html[data-brand="iyw"] .contact-us {padding-top:9rem;}
+html[data-brand="iyw"] .contact-us__in {align-items:stretch;}
+html[data-brand="iyw"] .contact-us__content {min-width:0;position:relative;padding:2.5rem;}
+html[data-brand="iyw"] .contact-us__visual {min-height:40rem;}
+html[data-brand="iyw"] .contact-us__content p {margin:16px 0;}
+html[data-brand="iyw"] .form {margin-top:2rem;}
+html[data-brand="iyw"] .inp-group {margin-bottom:24px;}
+html[data-brand="iyw"] .inp-group__label {display:block;margin-bottom:8px;}
+html[data-brand="iyw"] .inp-group__input,html[data-brand="iyw"] .inp-group__textarea {width:100%;color:white;background:transparent;border:1px solid var(--white-40);padding:12px;font-size:17px;}
+.iyw-confirmation {display:none;}
+.is-sended .iyw-confirmation {display:flex;padding:2rem;opacity:1;pointer-events:auto;}
+.is-sended .form {visibility:hidden;pointer-events:none;}
+html[data-brand="iyw"] .footer-bottom__links {flex-wrap:wrap;gap:16px;}
+@media(hover:hover) and (pointer:fine){.iyw-categories a:hover h4,.map-stop-list a:hover {text-decoration:underline;}html[data-brand="iyw"] .btn-primary:hover {background:white;color:#970015;}}
+@media(max-width:991px){.iyw-beyond,.iyw-about {grid-template-columns:1fr 1fr;}html[data-brand="iyw"] .coaches {grid-template-columns:1fr 1fr;}}
+@media(max-width:479px){
+ html[data-brand="iyw"] .header__l {padding:10px 20px;}
+ html[data-brand="iyw"] .header-logo {width:155px;}
+ html[data-brand="iyw"] .intro {min-height:780px;}
+ html[data-brand="iyw"] .intro__headline {font-size:17vw;max-width:7.5ch;}
+ html[data-brand="iyw"] .intro .body-xxl {font-size:20px;line-height:1.5;}
+ .iyw-hero-actions {flex-direction:column;align-items:center;}
+ html[data-brand="iyw"] .iyw-two-ways,html[data-brand="iyw"] .coaches,.iyw-about,.iyw-beyond {grid-template-columns:1fr;}
+ html[data-brand="iyw"] .iyw-two-ways .statistic-item {padding:24px 0;}
+ html[data-brand="iyw"] .iyw-two-ways .statistic-item__visual {height:260px;}
+ .iyw-number-grid {grid-template-columns:1fr 1fr;}
+ .iyw-number-photo {height:260px;}
+ .iyw-filters,.iyw-filters label {width:100%;}
+ .iyw-filters select {width:100%;}
+ .iyw-tabs button {flex-basis:100%;}
+ .map-select {max-width:100%;}
+ html[data-brand="iyw"] .contact-us__content {padding:24px 0;}
+ html[data-brand="iyw"] .contact-us__visual {min-height:0;height:300px;}
+ html[data-brand="iyw"] .retreat-page-intro__photos {height:auto;}
+ html[data-brand="iyw"] .slick-dots {max-height:64px;overflow:auto;}
+}
+.iyw-beyond-photo {width:100%;height:28rem;object-fit:cover;margin-bottom:2rem;}
+@media(max-width:479px){.iyw-beyond-photo {height:260px;}}
+
+@media(hover:hover) and (pointer:fine){html[data-brand="iyw"] .btn-primary:hover .button-sm {color:#970015;}}
+html[data-brand="iyw"] .retreat-page-content__sidebar {flex:none;}
+html[data-brand="iyw"] .coaches-person-info {display:block;}
+html[data-brand="iyw"] .coaches-person-info__head {margin-bottom:24px;}
+html[data-brand="iyw"] .guide-close {float:none;display:block;margin-left:auto;}
+
+html[data-brand="iyw"] .header-logo {width:200px;height:60px;padding:0;object-fit:contain;}
+@media(max-width:479px){html[data-brand="iyw"] .header-logo {width:155px;height:48px;}}
+/* Vita combine band recomposed as one photograph beside five programme lines. */
+html[data-brand="iyw"] .combine-section > .container {display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+html[data-brand="iyw"] .combine-section h2 {grid-column:1/-1;}
+html[data-brand="iyw"] .combine-section .iyw-beyond {grid-column:2;grid-row:2;display:block;margin:0;}
+html[data-brand="iyw"] .combine-section .iyw-beyond article {padding:16px 0;}
+html[data-brand="iyw"] .combine-section .iyw-beyond p {margin:8px 0;}
+html[data-brand="iyw"] .combine-section .iyw-beyond-photo {grid-column:1;grid-row:2;height:100%;min-height:28rem;margin:0;}
+html[data-brand="iyw"] .combine-section .btn-primary {grid-column:2;justify-self:start;}
+@media(max-width:479px){
+ html[data-brand="iyw"] .combine-section > .container {display:flex;flex-direction:column;gap:24px;}
+ html[data-brand="iyw"] .combine-section .iyw-beyond-photo {order:1;height:260px;min-height:0;}
+ html[data-brand="iyw"] .combine-section .iyw-beyond {order:2;}
+ html[data-brand="iyw"] .combine-section .btn-primary {order:3;align-self:flex-start;}
+}
+html[data-brand="iyw"] .iyw-number-grid {gap:0;grid-template-columns:repeat(4,minmax(0,1fr));}
+html[data-brand="iyw"] .iyw-number-grid .statistic-item {padding:2rem;display:block;min-width:0;}
+html[data-brand="iyw"] .iyw-number-grid .statistic-item__visual {height:12rem;margin-top:24px;}
+@media(max-width:991px){html[data-brand="iyw"] .iyw-number-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:479px){html[data-brand="iyw"] .iyw-number-grid .statistic-item {padding:24px 12px;}html[data-brand="iyw"] .iyw-number-grid .statistic-item__visual {height:140px;}}
+html[data-brand="iyw"] .iyw-two-ways .statistic-item {width:auto;}
+.brand-dot {display:inline-block;width:6px;height:6px;border-radius:50%;background:#970015;}
+@media(max-width:479px){html[data-brand="iyw"] .iyw-number-grid.slick-initialized {display:block;}}
+
+html[data-brand="iyw"] .coaches-person__visual {display:block;}
+
+html[data-brand="iyw"] :is(h2,h3,h4) {margin-top:0;margin-bottom:0;}
+/* Claude 10-28: stop names read as a quiet route line, not a link cloud. */
+html[data-brand="iyw"] .map-stop-list {display:flex;flex-wrap:wrap;gap:.25em .9em;margin-top:.75rem;}
+html[data-brand="iyw"] .map-stop-list a {text-decoration:none;color:rgba(255,255,255,.62);font-size:.875rem;}
+html[data-brand="iyw"] .map-stop-list a:hover,html[data-brand="iyw"] .map-stop-list a:focus-visible {color:#fff;text-decoration:underline;}
+/* Claude 10-28 phone: map fills the width; the stop list collapses to the first 12 names (all pins stay linked on the map). */
+@media (max-width:479px){
+ html[data-brand="iyw"] .iyw-map .destination__code svg {width:100%;height:auto;}
+ html[data-brand="iyw"] .map-stop-list li:nth-child(n+13) {display:none;}
+ html[data-brand="iyw"] .slick-dots {flex-wrap:nowrap;gap:4px;justify-content:center;}
+ html[data-brand="iyw"] .slick-dots li {margin:0;flex:0 0 auto;}
+ html[data-brand="iyw"] .slick-dots li button {width:8px;height:8px;padding:0;}
+}
+/* Claude 10-28: "Iceland Your Way" is ~7.6em wide on one line; size it to the viewport so it never overflows or drifts right (the 12ch max-width did). */
+@media (min-width:480px){
+ html[data-brand="iyw"] .intro__headline {max-width:none;width:100%;white-space:nowrap;text-align:center;font-size:min(11.875rem,calc((100vw - 5rem) / 7.9));}
+}
+/* Claude 10-28: Vita's aspect-ratio 1440/922 + a min-height forced the hero to 1249px wide below 1249px viewports (headline ran off the right). Photo hero = full width, viewport-led height. */
+html[data-brand="iyw"] .intro {aspect-ratio:auto;width:100%;min-height:clamp(36rem,100svh,58rem);}
+/* Claude 10-28: two-ways rows are short taglines; Beyond-travel button keeps its pill size; map pins read on dark land. */
+html[data-brand="iyw"] .iyw-categories p {font-size:1rem;line-height:1.5;color:rgba(255,255,255,.7);}
+html[data-brand="iyw"] .combine-section .btn-primary {justify-self:start;align-self:start;height:auto;width:auto;aspect-ratio:auto;}
+html[data-brand="iyw"] .map-pin > circle:not(.map-hit) {fill:#fff;r:5;}
+html[data-brand="iyw"] .map-pin > g {opacity:.55;}
+html[data-brand="iyw"] .intro::after {background:linear-gradient(180deg,#091b2099 0%,#091b2000 24%,#091b2000 38%,#091b2066 64%,#091b20aa 100%);}
+/* Claude 10-28: new SVG lockup is already white; size by width, no filter. */
+html[data-brand="iyw"] .header-logo,html[data-brand="iyw"] .footer-logo img {filter:none;width:200px;height:auto;max-height:none;object-fit:contain;padding:0;background:none;}
+@media (max-width:479px){html[data-brand="iyw"] .header-logo {width:150px;}}
